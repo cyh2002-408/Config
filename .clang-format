@@ -1,0 +1,38 @@
+# 基于LLVM风格的自定义配置
+BasedOnStyle: LLVM
+
+# 缩进设置
+IndentWidth: 4               # 缩进宽度为4个空格
+UseTab: Never                # 不使用制表符，始终用空格
+TabWidth: 4                  # 制表符宽度（当使用时）
+BreakBeforeBraces: Attach    # 大括号另起一行（Allman风格）
+IndentCaseLabels: true       # case标签缩进
+
+# 换行设置
+ColumnLimit: 100             # 每行最大字符数
+AllowShortBlocksOnASingleLine: false  # 不允许短块在单行
+AllowShortFunctionsOnASingleLine: None  # 函数不允许单行
+AllowShortIfStatementsOnASingleLine: false  # if不允许单行
+
+# 空格设置
+SpaceAfterCStyleCast: true   # C风格强制转换后加空格
+SpaceBeforeAssignmentOperators: true  # 赋值运算符前加空格
+SpaceInEmptyParentheses: false  # 空括号内不加空格
+SpacesInParentheses: false   # 括号内不加空格
+SpacesInSquareBrackets: false # 方括号内不加空格
+SpacesInAngles: false        # 尖括号内不加空格
+SpaceBeforeParens: ControlStatements  # 控制语句括号前加空格
+
+# 对齐设置
+AlignAfterOpenBracket: Align  # 括号后的内容对齐
+AlignConsecutiveAssignments: true  # 连续赋值对齐
+AlignConsecutiveDeclarations: true  # 连续声明对齐
+AlignEscapedNewlines: Left    # 转义换行左对齐
+
+# 其他设置
+PointerAlignment: Left       # 指针运算符靠左（char* ptr）
+SortIncludes: true           # 自动排序#include
+SortUsingDeclarations: true  # 自动排序using声明
+BreakConstructorInitializers: BeforeComma  # 构造函数初始化列表换行
+MaxEmptyLinesToKeep: 1       # 最多保留1个空行
+KeepEmptyLinesAtTheStartOfBlocks: false  # 块开始不保留空行
